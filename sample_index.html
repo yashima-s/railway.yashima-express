@@ -1,0 +1,452 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="LFR9PrBI804o4TPlg90DlTZIoJsEui3KXahYuV8U">
+
+    <title>ヤシマキザイTOP画面</title>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- Styles -->
+    <link href="https://yashima-express.com/css/normalize.css" rel="stylesheet">
+    <link href="https://yashima-express.com/css/app.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://yashima-express.com/css/starter.css">
+    <link rel="stylesheet" href="https://yashima-express.com/css/starter.css">
+    
+    <link rel="stylesheet" href="https://yashima-express.com/css/fix.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8ENKPNYC1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E8ENKPNYC1');
+    </script>
+    <style>
+        .p-header__nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .p-header__nav__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body class="p-top">
+    <!-- Google tag (gtag.js) -->
+
+                <main id="content">
+            <header class="p-header">
+    <div class="container">
+        <div class="row ">
+            <div class="col-3 col-xl-2">
+                <h1>
+                    <a href="./sample_index.html"><img src="https://yashima-express.com/img/common/logo.svg" alt="ヤシマエクスプレス"></a>
+                </h1>
+            </div>
+
+            <div class="col-9 col-xl-6 p-header__search">
+                <form>
+                    <div class="input-group">
+                        <button class="btn btn-secondary" type="submit"><i class="bi bi-search"></i></button>
+                        <input type="text"
+       name="search_word"
+       id="search_word"
+       class="form-control "
+       value=""
+                            placeholder="キーワード／タグ検索"
+              >
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-xl-4 p-header__info">
+                <div class="row align-items-center text-right">
+                    <div class="col-12 col-lg-4 ml-auto col-xl-9">
+                        <div class="p-header__user_name">
+                                                            (株)ヤシマキザイ　／　テスト様専用ページ
+                                                    </div>
+                    </div>
+                    <div class="d-none d-xl-block col-xl-3 ">
+                        <a  href="./index.html"
+                        >
+                            <img src="https://yashima-express.com/img/icons/logout.svg" alt="ログアウト">
+                        </a>
+                        <form id="logout-form" style="display: none;">
+                            <input type="hidden" name="_token" value="LFR9PrBI804o4TPlg90DlTZIoJsEui3KXahYuV8U">                        </form>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-12 p-header__menu">
+                        <a href="" class="btn btn-primary btn-sm"><i class="bi bi-suit-heart-fill"></i>お気に入りリスト</a>
+                        <a href="" class="btn btn-primary btn-sm mr-2"><i class="bi bi-clipboard-check-fill"></i>お見積りリスト</a>
+                        <a href=""><i class="bi bi-person-circle"></i></a>
+                        <span class="dropdown">
+                            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-list"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLinks">
+                                <li><a class="dropdown-item" href="">アカウント</a></li>
+                                <li><a class="dropdown-item" href="">パスワード変更</a></li>
+                                <li><a class="dropdown-item" href="">お気に入り一覧</a></li>
+                                <li><a class="dropdown-item" href="">見積りリスト</a></li>
+                                <li><a class="dropdown-item" href="">総合問い合わせ</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://yashima-express.com/teams_service">ご利用規約</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://yashima-express.com/files/help.pdf">サイト利用方法</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="https://www.yashima-co.co.jp/ja/index.html">ヤシマキザイ</a></li>
+                                <li>
+                                    <a  class="dropdown-item"
+                                        href="./index.html"
+                                        onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();"
+                                    >
+                                        ログアウト
+                                        <form id="logout-form" action="" method="" style="display: none;">
+                                            <input type="hidden" name="_token" value="LFR9PrBI804o4TPlg90DlTZIoJsEui3KXahYuV8U">                                        </form>
+                                    </a>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <nav class="p-header__nav">
+    <div class="p-header__nav__inner js-header_nav">
+        <div>
+            <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://yashima-express.com/img/icons/nav/1.svg" alt="PICK UP">
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://yashima-express.com/img/icons/nav/2.svg" alt="セール商品">
+                </a>
+            </div>
+        </div>
+                    <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://railway.yashima-express.com/img/icons/nav/3.svg" alt="検収設備">
+                </a>
+            </div>
+                    <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://railway.yashima-express.com/img/icons/nav/4.svg" alt="駅">
+                </a>
+            </div>
+                    <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://railway.yashima-express.com/img/icons/nav/5.svg" alt="保線軌道">
+                </a>
+            </div>
+                    <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://railway.yashima-express.com/img/icons/nav/6.svg" alt="信号通信">
+                </a>
+            </div>
+                    <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://railway.yashima-express.com/img/icons/nav/7.svg" alt="電力">
+                </a>
+            </div>
+                    <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://railway.yashima-express.com/img/icons/nav/8.svg" alt="副資材">
+                </a>
+            </div>
+            <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://railway.yashima-express.com/img/icons/nav/9.svg" alt="デジタルソリューション">
+                </a>
+            </div>
+            <div class="nav-item dropdown">
+                <a class="nav-link" href="">
+                    <img src="https://railway.yashima-express.com/img/icons/nav/10.svg" alt="その他">
+                </a>
+            </div>
+            </div>
+</nav>
+<div class="p-header__nav p-header__nav--sub"></div>
+
+    </div>
+</header>
+
+    <div class="p-header__notice text-white bg-primary">
+        <div class="container py-2">
+            <p class="mb-0"><small>ヤシマエクスプレスは、ヤシマキザイが提供するWeb上のサービスです。<br>本サービスは、本サイト上で取引を完結させることを目的としたものではありません。掲載情報に基づく問い合わせ対応等は、直接、当社営業担当等が行います。<br>掲載商品は弊社取り扱い商品のすべてではございません。掲載商品は、随時更新してまいります。この他にもございますので、是非ともお問合せください。</small></p>
+        </div>
+    </div>
+
+    
+    
+    
+    
+    <div class="container">
+        <hr class=" dropdown-divider">
+    </div>
+
+    
+    <div class="container py-4">
+        <div class="mb-4 mt-3">
+            <h2 class="mb-2"><i class="bi bi-box-seam mr-2"></i>商品一覧</h2>
+            <form method="GET" action="/search" class="form-inline px-2 ml-auto">
+                <input type="checkbox" name="netis_filter" id="netis_filter" value="1"  onchange="submit(this.form);">
+                <label for="netis_filter">　NETIS商品のみに絞る場合、チェック</label>
+            </form>
+        </div>
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5">
+            <span class="col c-card">
+                <div class="c-card__image">
+                    <img src="https://yashima-express.com/storage/itemimage/WRWetkWCFzpqZkYomMeh4dJyM8GMD5AVv2Ge95i3Ngr2hfJgOh.jpg" alt="">
+                </div>
+                <a href="./product-rodey.html">
+                    <div class="c-card__text py-2">
+                                                <div class="mb-1"><small>ベルエナジー（株）</small></div>
+                                            <h4 class="h5 mb-1">Roadie（ローディー）</h4>
+                        <div>
+                            <small style="display: block; max-width: 100%; overflow: hidden; text-align: left;">
+                                                                <span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                                        #EV
+                                    </span>
+                                                                <span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                                        #EV急速充電器
+                                    </span>
+                                                                <span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                                        #ポータブル
+                                    </span>
+                                                                <span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                                        #充電器
+                                    </span>
+                                                                <span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                                        #電気自動車
+                                    </span>
+                                                        </small>
+                        </div>
+                                        </div>
+                </a>
+                <div class="c-card__buttons">
+                                        <button type="button" class="favorite" id="favorite458" data-favorite_id="458"><i class="bi bi-suit-heart-fill" data-toggle="tooltip" title="お気に入り登録リストに追加"></i></button>
+        <button type="button" class="estimate" data-estimate_id="458"><i class="bi bi-clipboard-check-fill" data-toggle="tooltip" title="見積り依頼リストに追加"></i></button>
+                                </div>
+            </span>
+            <span class="col c-card"><div class="c-card__image"><img src="https://yashima-express.com/storage/itemimage/hcWb9YqjyRWSHUZl6J5neeiGAnpiM3qgXTEJpBPF9cZNFBaQ1Y.png" alt=""></div> <a href="./product-show_detail.html"><div class="c-card__text py-2"><div class="mb-1"><small><span>(株)ヤシマキザイ</span></small></div> <h4 class="h5 mb-1" >ルーム-YAM</h4> <!----> <small style="display: block; max-width: 100%; overflow: hidden; text-align: left;"><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #コーティング
+            </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #抗ウイルス
+            </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #抗菌
+            </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #新型コロナウイルス
+            </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #除菌
+            </span></small></div></a> <div class="c-card__buttons"><button type="button"><i data-toggle="tooltip" title="お気に入り登録リストに追加" class="bi bi-suit-heart-fill"></i></button> <button type="button"><i data-toggle="tooltip" title="見積り依頼リストに追加" class="bi bi-clipboard-check-fill"></i></button></div></span>
+            <span class="col c-card"><div class="c-card__image"><img src="https://yashima-express.com/storage/itemimage/XCGEoarsjDgSNq26NMzGh124iQSnf5dzeay2HkYC0fmWonqP98.png" alt=""></div> <a href=""><div class="c-card__text py-2"><div class="mb-1"><small><span>(株)ヤシマキザイ</span></small></div> <h4 class="h5 mb-1">リキッド-YAM（除菌用）</h4> <!----> <small style="display: block; max-width: 100%; overflow: hidden; text-align: left;"><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #コーティング
+            </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #抗ウイルス
+            </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #抗菌
+            </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #新型コロナウイルス
+            </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #除菌
+            </span></small></div></a> <div class="c-card__buttons"><button type="button"><i data-toggle="tooltip" title="お気に入り登録リストに追加" class="bi bi-suit-heart-fill"></i></button> <button type="button"><i data-toggle="tooltip" title="見積り依頼リストに追加" class="bi bi-clipboard-check-fill"></i></button></div></span>
+            <span class="col c-card"><div class="c-card__image"><img src="https://yashima-express.com/storage/itemimage/akPHAn2XGrdRMiEqMauNZlzMUxaGueoTxaM2S0PDoafu7JzWkA.png" alt=""></div> <a href=""><div class="c-card__text py-2"><div class="mb-1"><small><span>(株)ヤシマキザイ</span></small></div> <h4 class="h5 mb-1">リキッド-YAM-R</h4> <!----> <small style="display: block; max-width: 100%; overflow: hidden; text-align: left;"><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #コーティング
+            </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #抗ウイルス
+            </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #抗菌
+            </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #新型コロナウイルス
+            </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                #除菌
+            </span></small></div></a> <div class="c-card__buttons"><button type="button"><i data-toggle="tooltip" title="お気に入り登録リストに追加" class="bi bi-suit-heart-fill"></i></button> <button type="button"><i data-toggle="tooltip" title="見積り依頼リストに追加" class="bi bi-clipboard-check-fill"></i></button></div></span>
+        </div>
+        <button v-if="items.length < allItemCount " button class="btn btn-primary" @click="clickLoadButtom">次の100件を表示</button>
+    </div>
+
+    
+            <div class="container py-4">
+            <div class="mb-4 mt-3">
+                <h2 class="mb-2"><i class="bi bi-box-seam mr-2"></i>直近の閲覧商品一覧</h2>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-4 row-cols-xl-5">
+            
+                <span class="col c-card"><div class="c-card__image"><img src="https://yashima-express.com/storage/itemimage/hcWb9YqjyRWSHUZl6J5neeiGAnpiM3qgXTEJpBPF9cZNFBaQ1Y.png" alt=""></div> <a href="./product-show_detail.html"><div class="c-card__text py-2"><div class="mb-1"><small><span>(株)ヤシマキザイ</span></small></div> <h4 class="h5 mb-1">ルーム-YAM</h4> <!----> <small style="display: block; max-width: 100%; overflow: hidden; text-align: left;"><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                    #コーティング
+                </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                    #抗ウイルス
+                </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                    #抗菌
+                </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                    #新型コロナウイルス
+                </span><span class="m-0 mr-1 badge badge-primary text-left" style="white-space: normal; display: inline-block;">
+                    #除菌
+                </span></small></div></a> <div class="c-card__buttons"><button type="button"><i data-toggle="tooltip" title="お気に入り登録リストに追加" class="bi bi-suit-heart-fill"></i></button> <button type="button"><i data-toggle="tooltip" title="見積り依頼リストに追加" class="bi bi-clipboard-check-fill"></i></button></div></span>
+ 
+            
+            </div>
+        </div>
+    
+    <div class="container py-4">
+        <h3 class="c-title--primary mb-3"><span>カテゴリ一覧</span></h3>
+        <div class="row row-cols-2 row-cols-lg-3 row-cols-xl-6 mb-2">
+                            <a href="" class="col text-black-50 mb-2">道路・設備保全</a>
+                            <a href="" class="col text-black-50 mb-2">安全対策</a>
+                            <a href="" class="col text-black-50 mb-2">環境対策</a>
+                            <a href="" class="col text-black-50 mb-2">副資材</a>
+                            <a href="" class="col text-black-50 mb-2">デジタルソリューション</a>
+                            <a href="" class="col text-black-50 mb-2">その他</a>
+                    </div>
+    </div>
+    </main>
+
+            <div class="bg-light py-4">
+    <div class="container">
+        <h4 class="c-title--secondary mb-4"><span>ご利用の流れ</span></h4>
+        <div class="c-segment--small p-home__flow row row-cols-4 mb-4">
+            <div class="col"><img src="https://yashima-express.com/img/home/flow_1.svg" alt="商品検索"></div>
+            <div class="col"><img src="https://yashima-express.com/img/home/flow_3.svg" alt="お問合せ"></div>
+            <div class="col"><img src="https://yashima-express.com/img/home/flow_2.svg" alt="お見積り"></div>
+            <div class="col"><img src="https://yashima-express.com/img/home/flow_4.svg" alt="対応・納品"></div>
+        </div>
+        <div class="text-center">
+            <a target="_blank" href="https://yashima-express.com/files/help.pdf" class="btn btn-primary c-button--arrow"><i class="bi bi-arrow-right-circle-fill"></i>詳しくはこちら</a>
+        </div>
+    </div>
+</div>
+
+<footer class="pt-5 pb-2 bg-primary text-white">
+    <div class="container">
+        <div class="c-segment--small">
+            <div class="p-footer__logo text-center mb-4">
+                <a href="#"><img src="https://yashima-express.com/img/common/logo_white.svg" alt="ヤシマエクスプレス"></a>
+            </div>
+            <p class="mb-4">ヤシマエクスプレスは、ヤシマキザイが提供するWeb上のサービスです。本サービスは、本サイト上で取引を完結させることを目的としたものではありません。掲載情報に基づく問い合わせ対応等は、直接、当社営業担当等が行います。</p>
+            <div class="row row-cols-4 text-center mb-4">
+                <a target="_blank" href="https://yashima-express.com/teams_service" class="col text-white"><small>ご利用規約</small></a>
+                <a target="_blank" href="https://yashima-express.com/files/help.pdf" class="col text-white"><small>サイト利用方法について</small></a>
+                <a href="" class="col text-white"><small>総合問い合せはこちら</small></a>
+                <a target="_blank" href="https://www.yashima-co.co.jp/ja/index.html" class="col text-white"><small>ヤシマキザイ<i class="bi bi-box-arrow-up-right ml-1"></i></small></a>
+            </div>
+            <div class="text-center mb-5">
+                <a href="#" class="js-to_top"><img src="https://yashima-express.com/img/icons/to_top.svg" alt="PAGE TOP"></a>
+            </div>
+            <div class="text-center"><small>Copyright © YASHIMA & Co., LTD. All Rights Reserved.</small></div>
+        </div>
+
+    </div>
+</footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- <script type="text/javascript" src="https://yashima-express.com/js/app.js"></script> -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script type="module" src="https://yashima-express.com/js/scripts.js"></script>
+
+    
+    <script>
+let content = new Vue({
+    el: '#content',
+    data() {
+        return {
+            items: [],
+            offset: 0,
+            getItemsUrl: "https:\/\/yashima-express.com\/items\/get_items",
+            addFavoriteUrl: "https:\/\/yashima-express.com\/favorite",
+            addEstimateUrl: "https:\/\/yashima-express.com\/estimate",
+            companyId: 315,
+            baseId: "",
+            departmentId: "",
+            userId: 12,
+            allItemCount: 111,
+        }
+    },
+    methods: {
+        clickLoadButtom() {
+            this.offset += 100;
+            this.getItem();
+        },
+        //商品を取得する
+        getItem() {
+            let params = {
+                offset: this.offset,
+                company_id: this.companyId,
+                base_id: this.baseId,
+                department_id: this.departmentId,
+                user_id: this.userId,
+            };
+            axios.get(this.getItemsUrl, {params: params})
+            .then((response) => {
+                //取得したデータをitemsに追加する
+                this.items = this.items.concat(response.data.data.items);
+            })
+            .catch((error) => {
+                alert(error);
+            });
+        },
+        //お気に入り登録
+        addFavorite(itemId){
+            let params = {
+                item_id: itemId,
+            };
+            axios.post(this.addFavoriteUrl, params)
+            .then((response) => {
+                //お気に入り登録したアイテムのお気に入りボタンを変更する
+                this.items.forEach((item) => {
+                    if (item.id === itemId) {
+                        item.is_favorite = true;
+                    }
+                });
+                alert('お気に入り登録しました。');
+            })
+            .catch((error) => {
+                alert(error);
+            });
+        },
+        //見積登録
+        addEstimate(itemId){
+            let params = {
+                item_id: itemId,
+            };
+            axios.post(this.addEstimateUrl, params)
+            .then((response) => {
+                //お気に入り登録したアイテムのお気に入りボタンを変更する
+                this.items.forEach((item) => {
+                    if (item.id === itemId) {
+                        item.is_estimate = true;
+                    }
+                });
+                alert('見積もり一覧へ追加しました。');
+            })
+            .catch((error) => {
+                alert(error);
+            });
+        },
+    },
+    mounted() {
+        this.getItem();
+    },
+});
+</script>
+
+</body>
+</html>

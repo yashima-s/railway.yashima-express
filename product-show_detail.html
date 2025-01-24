@@ -1,0 +1,346 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="9HMJxAnWt5A8BdhuK9QDjP4D8iY3OCAsDDWEPFBb">
+
+    <title>ヤシマエクスプレス　ルーム-YAM</title>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- Styles -->
+    <link href="https://yashima-express.com/css/normalize.css" rel="stylesheet">
+    <link href="https://yashima-express.com/css/app.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://yashima-express.com/css/starter.css">
+    <link rel="stylesheet" href="https://yashima-express.com/css/starter.css">
+    
+    <link rel="stylesheet" href="https://yashima-express.com/css/fix.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E8ENKPNYC1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E8ENKPNYC1');
+    </script>
+
+    <style>
+        .p-header__nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .p-header__nav__inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body class="p-top">
+    <!-- Google tag (gtag.js) -->
+
+                <main id="content">
+            <header class="p-header">
+    <div class="container">
+        <div class="row ">
+            <div class="col-3 col-xl-2">
+                <h1>
+                    <a href="./sample_index.html"><img src="https://yashima-express.com/img/common/logo.svg" alt="ヤシマエクスプレス"></a>
+                </h1>
+            </div>
+
+            <div class="col-9 col-xl-6 p-header__search">
+                <form>
+                    <div class="input-group">
+                        <button class="btn btn-secondary" type=""><i class="bi bi-search"></i></button>
+                        <input type="text"
+       name="search_word"
+       id="search_word"
+       class="form-control "
+       value=""
+                            placeholder="キーワード／タグ検索"
+              >
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-xl-4 p-header__info">
+                <div class="row align-items-center text-right">
+                    <div class="col-12 col-lg-4 ml-auto col-xl-9">
+                        <div class="p-header__user_name">
+                                                            (株)ヤシマキザイ　／　テスト様専用ページ
+                                                    </div>
+                    </div>
+                    <div class="d-none d-xl-block col-xl-3 ">
+                        <a  href="./sample_index.html"
+                        >
+                            <img src="https://yashima-express.com/img/icons/logout.svg" alt="ログアウト">
+                        </a>
+                        <form id="logout-form"  method="" style="display: none;">
+                            <input type="hidden" name="_token" value="9HMJxAnWt5A8BdhuK9QDjP4D8iY3OCAsDDWEPFBb">                        </form>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-12 p-header__menu">
+                        <a href="" class="btn btn-primary btn-sm"><i class="bi bi-suit-heart-fill"></i>お気に入りリスト</a>
+                        <a href="" class="btn btn-primary btn-sm mr-2"><i class="bi bi-clipboard-check-fill"></i>お見積りリスト</a>
+                        <a href=""><i class="bi bi-person-circle"></i></a>
+                        <span class="dropdown">
+                            <a href="#" class="dropdown-toggle" role="button" id="dropdownMenuLinks" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="bi bi-list"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLinks">
+                                <li><a class="dropdown-item" href="">アカウント</a></li>
+                                <li><a class="dropdown-item" href="">パスワード変更</a></li>
+                                <li><a class="dropdown-item" href="">お気に入り一覧</a></li>
+                                <li><a class="dropdown-item" href="">見積りリスト</a></li>
+                                <li><a class="dropdown-item" href="">総合問い合わせ</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="">ご利用規約</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="">サイト利用方法</a></li>
+                                <li><a class="dropdown-item" target="_blank" href="">ヤシマキザイ</a></li>
+                                <li>
+                                    <a  class="dropdown-item"
+                                        href="https://yashima-express.com/logout"
+                                        onclick="event.preventDefault();
+                                        document.getElementById('logout-form').submit();"
+                                    >
+                                        ログアウト
+                                        <form id="logout-form" action="https://yashima-express.com/logout" method="POST" style="display: none;">
+                                            <input type="hidden" name="_token" value="9HMJxAnWt5A8BdhuK9QDjP4D8iY3OCAsDDWEPFBb">                                        </form>
+                                    </a>
+                                </li>
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <nav class="p-header__nav">
+            <div class="p-header__nav__inner js-header_nav">
+                <div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link" href="">
+                            <img src="https://yashima-express.com/img/icons/nav/1.svg" alt="PICK UP">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link" href="">
+                            <img src="https://yashima-express.com/img/icons/nav/2.svg" alt="セール商品">
+                        </a>
+                    </div>
+                </div>
+                            <div class="nav-item dropdown">
+                        <a class="nav-link" href="">
+                            <img src="https://railway.yashima-express.com/img/icons/nav/3.svg" alt="検収設備">
+                        </a>
+                    </div>
+                            <div class="nav-item dropdown">
+                        <a class="nav-link" href="">
+                            <img src="https://railway.yashima-express.com/img/icons/nav/4.svg" alt="駅">
+                        </a>
+                    </div>
+                            <div class="nav-item dropdown">
+                        <a class="nav-link" href="">
+                            <img src="https://railway.yashima-express.com/img/icons/nav/5.svg" alt="保線軌道">
+                        </a>
+                    </div>
+                            <div class="nav-item dropdown">
+                        <a class="nav-link" href="">
+                            <img src="https://railway.yashima-express.com/img/icons/nav/6.svg" alt="信号通信">
+                        </a>
+                    </div>
+                            <div class="nav-item dropdown">
+                        <a class="nav-link" href="">
+                            <img src="https://railway.yashima-express.com/img/icons/nav/7.svg" alt="電力">
+                        </a>
+                    </div>
+                            <div class="nav-item dropdown">
+                        <a class="nav-link" href="">
+                            <img src="https://railway.yashima-express.com/img/icons/nav/8.svg" alt="副資材">
+                        </a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link" href="">
+                            <img src="https://railway.yashima-express.com/img/icons/nav/9.svg" alt="デジタルソリューション">
+                        </a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link" href="">
+                            <img src="https://railway.yashima-express.com/img/icons/nav/10.svg" alt="その他">
+                        </a>
+                    </div>
+                    </div>
+        </nav>
+<div class="p-header__nav p-header__nav--sub"></div>
+
+    </div>
+</header>
+    <div class="container my-2">
+        <nav class="c-breadcrumb">
+            <ol>
+                <li><a href="">トップ</a></li>
+                <li class="active" aria-current="page">
+                    <a href="">
+                安全対策
+            </a>
+            ・                    <a href="">
+                環境対策
+            </a>
+                        </li>
+                <li class="active" aria-current="page"><a href="">ルーム-YAM</a></li>
+            </ol>
+        </nav>
+
+        <div class="container my-2">
+    <div class="row justify-content-between mb-3">
+        <div class="col-12 col-md-6">
+            <h2>
+                ルーム-YAM
+                            </h2>
+        </div>
+        <div class="col-12 col-md-6 text-right">
+                            <button type="button" class="favorite" id="favorite6" data-favorite_id="6"><i class="bi bi-suit-heart-fill" data-toggle="tooltip" title="お気に入り登録リストに追加"></i></button>
+    <button type="button" class="estimate" data-estimate_id="6"><i class="bi bi-clipboard-check-fill" data-toggle="tooltip" title="見積り依頼リストに追加"></i></button>
+                    </div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-12 col-md-5 mb-3">
+            <div class="p-product-single__image">
+                <div class="main js-product_images">
+                    <div class="item">
+                        <img src="https://yashima-express.com/storage/itemimage/hcWb9YqjyRWSHUZl6J5neeiGAnpiM3qgXTEJpBPF9cZNFBaQ1Y.png">
+                    </div>
+                                    </div>
+                <div class="sub js-product_images__nav">
+                    <div class="item">
+                        <img src="https://yashima-express.com/storage/itemimage/hcWb9YqjyRWSHUZl6J5neeiGAnpiM3qgXTEJpBPF9cZNFBaQ1Y.png">
+                    </div>
+                                    </div>
+            </div>
+            <div class="main mt-3">
+                <iframe width="420" height="180" src="https://www.youtube.com/embed/https://www.youtube.com/embed/7lPRbuVnYj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+            </div>
+                    </div>
+        <div class="col-12 col-md-6">
+            <p class="mb-5">抗菌・抗ウイルスコーティング剤『ルームｰYAM』のご紹介。<br />
+<br />
+鉄道車両施工実績3000両以上！<br />
+広い範囲から細かい部分まで使用できる抗菌・抗ウイルスコーティング剤<br />
+<br />
+当社では、ナノサイズの銀+チタンの複合材により、明暗所関係なく抗菌作用が発揮される「YAM技術」を応用した抗菌・抗ウイルスコーティング剤『YAMシリーズ』を取り扱っております。<br />
+<br />
+接触の多い細かい部分まで広い範囲に使用可能。対象場所の面積や部位に合わせて製品を使い分けることで、より効率的に菌・ウイルス対策ができます。<br />
+<br />
+また、コーティングの効果は１回で２年持続し、暗所でも効果があるため、鉄道車両内や室内にも抗菌・抗ウイルス効果が得られます。<br />
+<br />
+当社では、製品のみの販売と施工請負のどちらも可能ですので、ご要望の際は、お気軽にご相談ください。<br />
+<br />
+鉄道車両の他、ホテル、商業施設、大規模商業施設、学校、会議室など実績多数。<br />
+<br />
+【対象部位】<br />
+車両内及び室内のつり革やシート等、椅子やテーブル、及び照明スイッチ等の比較的小面積の対象物<br />
+<br />
+【施工方法】<br />
+エアゾール缶による吹き付け<br />
+<br />
+【使用目安】<br />
+　車両：１両あたり約４缶<br />
+　室内：約24畳分/缶（420ml）<br />
+<br />
+【特徴】<br />
+■広い範囲に使用可能　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　■長期持続タイプ　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　■簡単施工<br />
+■安心安全なオールインワン製品                                                                                                                                               ■抗菌・抗ウイルス SIAA認証取得済み<br />
+<br />
+<br />
+※詳しくはカタログをダウンロードして頂くか、お気軽にお問い合わせください。</p>
+            <div class="row row-cols-1 row-cols-md-2 mb-4">
+                <div class="col mb-3">
+                    <div class="mb-3">
+                                                    <p>メーカー名：(株)ヤシマキザイ</p>
+                                                <p>型式：420ml</p>
+                        <p>価格：6,000円</p>
+                        <p>納期：都度見積もり</p>
+                                                                            <p>タグ：
+                                <small>
+                                                                            <span class="m-0 mr-1 badge badge-primary">#コーティング</span>
+                                                                            <span class="m-0 mr-1 badge badge-primary">#抗ウイルス</span>
+                                                                            <span class="m-0 mr-1 badge badge-primary">#抗菌</span>
+                                                                            <span class="m-0 mr-1 badge badge-primary">#新型コロナウイルス</span>
+                                                                            <span class="m-0 mr-1 badge badge-primary">#除菌</span>
+                                                                    </small>
+                            </p>
+                                            </div>
+                    <div>
+                                                    <a href="" class="c-button--basic">カタログはこちら<i class="bi bi-download mr-1"></i></a>
+                                            </div>
+                </div>
+            </div>
+
+            <div>
+                <a href="" class="btn btn-primary c-button--arrow"><i class="bi bi-arrow-right-circle-fill"></i>商品へのお問い合わせはこちら（メールフォームへ）</a>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    </main>
+
+            <div class="bg-light py-4">
+    <div class="container">
+        <h4 class="c-title--secondary mb-4"><span>ご利用の流れ</span></h4>
+        <div class="c-segment--small p-home__flow row row-cols-4 mb-4">
+            <div class="col"><img src="https://yashima-express.com/img/home/flow_1.svg" alt="商品検索"></div>
+            <div class="col"><img src="https://yashima-express.com/img/home/flow_3.svg" alt="お問合せ"></div>
+            <div class="col"><img src="https://yashima-express.com/img/home/flow_2.svg" alt="お見積り"></div>
+            <div class="col"><img src="https://yashima-express.com/img/home/flow_4.svg" alt="対応・納品"></div>
+        </div>
+        <div class="text-center">
+            <a target="_blank" href="https://yashima-express.com/files/help.pdf" class="btn btn-primary c-button--arrow"><i class="bi bi-arrow-right-circle-fill"></i>詳しくはこちら</a>
+        </div>
+    </div>
+</div>
+
+<footer class="pt-5 pb-2 bg-primary text-white">
+    <div class="container">
+        <div class="c-segment--small">
+            <div class="p-footer__logo text-center mb-4">
+                <a href="#"><img src="https://yashima-express.com/img/common/logo_white.svg" alt="ヤシマエクスプレス"></a>
+            </div>
+            <p class="mb-4">ヤシマエクスプレスは、ヤシマキザイが提供するWeb上のサービスです。本サービスは、本サイト上で取引を完結させることを目的としたものではありません。掲載情報に基づく問い合わせ対応等は、直接、当社営業担当等が行います。</p>
+            <div class="row row-cols-4 text-center mb-4">
+                <a target="_blank" href="https://yashima-express.com/teams_service" class="col text-white"><small>ご利用規約</small></a>
+                <a target="_blank" href="https://yashima-express.com/files/help.pdf" class="col text-white"><small>サイト利用方法について</small></a>
+                <a href="" class="col text-white"><small>総合問い合せはこちら</small></a>
+                <a target="_blank" href="https://www.yashima-co.co.jp/ja/index.html" class="col text-white"><small>ヤシマキザイ<i class="bi bi-box-arrow-up-right ml-1"></i></small></a>
+            </div>
+            <div class="text-center mb-5">
+                <a href="#" class="js-to_top"><img src="https://yashima-express.com/img/icons/to_top.svg" alt="PAGE TOP"></a>
+            </div>
+            <div class="text-center"><small>Copyright © YASHIMA & Co., LTD. All Rights Reserved.</small></div>
+        </div>
+
+    </div>
+</footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://yashima-express.com/js/app.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://yashima-express.com/js/scripts.js"></script>
+
+    
+    </body>
+</html>
